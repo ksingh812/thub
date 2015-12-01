@@ -310,7 +310,7 @@ $id = get_the_ID();
 								<div class="column_inner">
 									
 									&nbsp;
-									<h3 align="center"><?php the_title(); ?> Tickets</h3>&nbsp;&nbsp;
+								<h3 align="center"><?php the_title(); ?> Tickets</h3>&nbsp;&nbsp;
 									
 								<div class="table-responsive">				
 									<script type="text/javascript">// <![CDATA[
