@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function(grunt) {
   require('jit-grunt')(grunt);
 
@@ -10,10 +11,16 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "css/main.css": "less/main.less" // destination file and source file
+          "themes/tkthub-child/css/main.css": "themes/tkthub-child/less/main.less" // destination file and source file
         }
       }
     },
+    cssmin: {
+	  minify: {
+	    src: 'themes/tkthub-child/style.css',
+	    dest: 'themes/tkthub-child/style.min.css'
+	  }
+	},
     watch: {
       styles: {
         files: ['less/**/*.less'], // which files to watch
@@ -26,4 +33,5 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['less', 'watch']);
+  grunt.registerTask('test', ['cssmin']);
 };
