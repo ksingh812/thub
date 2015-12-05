@@ -1,2 +1,6 @@
 uploads/*
 plugins/*
+/advanced-cache.php
+/cache/*
+/db.php
+/w3tc-config/*
