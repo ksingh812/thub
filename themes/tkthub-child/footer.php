@@ -52,6 +52,7 @@
 							&nbsp;<span class="social_icon_holder"><a href="https://plus.google.com/114049133992389790959/" target="_blank"><span class="icon-stack icon-large"><i class="fa fa-google-plus"></i></span></a></span>
 							
 						</div>
+						<?php dynamic_sidebar('footer-right'); ?>
 					</div>
 					</div>
 				</div>

@@ -309,6 +309,33 @@ a.qbutton{
 #site-footer .social_icon_holder a:hover{
 	color: #303030;
 }
+#site-footer p{
+	color: #f2f2f2;
+	display: inline;
+	float: left;
+	padding: 0px;
+}
+#site-footer form{
+	margin-top: 40px;
+}
+#site-footer small{
+	display:none;
+}
+#site-footer .sml_email{
+	padding-right:0px;
+}
+#site-footer .sml_emailinput {
+	height: 35px;
+	color: #000;
+}
+#site-footer .sml_submit{
+	padding-left: 0px;
+}
+#site-footer .sml_submitbtn{
+	border-radius: 0px;
+    background: #d83c3c;
+    height: 35px;
+}
 /** BLOG **/
 .post-row {
 	border: 1px solid #ededed;

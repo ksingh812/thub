@@ -15,8 +15,8 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 <div class="col-md-12 content-area" id="main-column">
 	<main id="main" class="site-main" role="main">
 		<?php 
-		while (have_posts()) {
-			the_post();
+		if (have_posts()) {
+			//the_post();
 
 			get_template_part('content', 'page');
 

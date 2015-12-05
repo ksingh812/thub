@@ -157,7 +157,7 @@
 		ob_start();
         global $wp_query;
 
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+       // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = array(
             "order_by"              => "menu_order", 
             "order"                 => "ASC", 
@@ -171,8 +171,7 @@
                 'portfolio_category' => $category,
                 'orderby' => $order_by,
                 'order' => $order,
-                'posts_per_page' => $number,
-                'paged' => $paged
+                'posts_per_page' => $number
             );
         
 		$temp = $wp_query;
