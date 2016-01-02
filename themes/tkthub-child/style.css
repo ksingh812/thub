@@ -88,7 +88,7 @@ h1{
 }
 
 .jumbotron{
-	background-image: url("http://tickethub.co/wp-content/uploads/2014/01/header-main.jpg"); width: 100%; height: 350px;background-size: 100%;
+	background-image: url("http://tickethub.co/wp-content/uploads/2014/01/header-main.jpg"); width: 100%; height: 350px;background-position: 0px 0px;background-size: 100%;
 }
 .jumbotron .container{
 	display: inline;
@@ -484,7 +484,7 @@ h1.entry-title{
 	}
 	.jumbotron{
 	height: 200px;
-	background-position: -20px -150px;
+	background-position: 0px 0px;
 	}
 	.jumbotron .container{
 		top: 20px;
