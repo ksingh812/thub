@@ -50,7 +50,7 @@
 							&nbsp;<span class="social_icon_holder"><a href="http://www.linkedin.com/company/tickethub" target="_blank"><span class="icon-stack icon-large"><i class="fa fa-linkedin"></i></span></a></span>
 							&nbsp;<span class="social_icon_holder"><a href="http://www.youtube.com/user/tickethubco" target="_blank"><span class="icon-stack icon-large"><i class="fa fa-youtube"></i></span></a></span>
 							&nbsp;<span class="social_icon_holder"><a href="https://plus.google.com/114049133992389790959/" target="_blank"><span class="icon-stack icon-large"><i class="fa fa-google-plus"></i></span></a></span>
-							
+							&nbsp;<span class="social_icon_holder"><a href="http://tickethub.tumblr.com/" target="_blank"><span class="icon-stack icon-large"><i class="fa fa-tumblr"></i></span></a></span>
 						</div>
 						<?php dynamic_sidebar('footer-right'); ?>
 					</div>
