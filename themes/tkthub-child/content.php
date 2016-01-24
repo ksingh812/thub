@@ -51,7 +51,7 @@
 				<script type="text/javascript">// <![CDATA[
 				function TN_SetWidgetOptions() { TN_Widget.newWindow = false; TN_Widget.trackingParams = ''; TN_Widget.custLink = false; TN_Widget.tixUrl = 'http://tickets.tickethub.co/ResultsTicket.aspx'; }
 				// ]]></script>
-				<script type="text/javascript" src="http://site_01504_011.ticketsoftware.net/widget2_c.aspx?kwds=<?php echo $artist_name; ?>&amp;style=0&amp;mxrslts=100">// <![CDATA[
+				<script type="text/javascript" src="http://site_01504_011.ticketsoftware.net/widget2_c.aspx?kwds=<?php echo $artist_name; ?>&amp;style=0&amp;mxrslts=100&amp;sdate=01%2F30%2F2016">// <![CDATA[
 				<span id="mce_marker" data-mce-type="bookmark"></span><span id="__caret">_</span>
 				// ]]></script></div><a style="margin-top:20px;" class="qbutton  medium normal" title="<?php echo $artist_name; ?> Tickets" target="_self" href="http://tickets.tickethub.co/ResultsGeneral.aspx?stype=0&kwds=<?php echo $artist_name; ?>">MORE TICKETS >> </a>
 		</div>
