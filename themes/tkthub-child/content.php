@@ -8,7 +8,13 @@
 	 		}
 	 		//echo $url;
 	 	?>
+	 	
 	 	<img itemprop="image" src="<?php echo $url; ?>" alt="<?php the_title();?>" class="header-img img-responsive"/>
+	 	<?php
+	 		if (!empty(get_post(get_post_thumbnail_id())->post_excerpt)):
+	 		echo '<span class="small">Image source: '.get_post(get_post_thumbnail_id())->post_excerpt.'</span>';
+			endif;
+	 	 ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php if ('post' == get_post_type()) { ?> 

@@ -35,6 +35,11 @@ get_header();
 					 		//echo $url;
 					 	?>
 					 	<a href="<?php the_permalink(); ?>" rel="bookmark"><img itemprop="image" src="<?php echo $url; ?>" alt="<?php the_title();?>" class="header-img img-responsive"/></a>
+					 	<?php
+					 		if (!empty(get_post(get_post_thumbnail_id())->post_excerpt)):
+					 		echo '<span class="small">Image source: '.get_post(get_post_thumbnail_id())->post_excerpt.'</span>';
+							endif;
+					 	 ?>
 					</div>
 					<div class="col-md-6 col-xs-12 post-entry">
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
