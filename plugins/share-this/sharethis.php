@@ -22,14 +22,15 @@
  Plugin Name: ShareThis
  Plugin URI: http://www.sharethis.com
  Description: Let your visitors share a post/page with others. Supports e-mail and posting to social bookmarking sites. <a href="options-general.php?page=sharethis.php">Configuration options are here</a>. Questions on configuration, etc.? Make sure to read the README.
- Version: 7.1
+ Version: 7.3
  Author: <a href="http://www.sharethis.com">The ShareThis Team</a>
  Author URI: http://www.sharethis.com
  */
 
 load_plugin_textdomain('sharethis');
 
-$_stversion=7.1;
+
+$_stversion=7.3;
 
 function install_ShareThis(){
   $publisher_id = get_option('st_pubid'); //pub key value
@@ -682,6 +683,8 @@ function st_options_form() {
     }
   }
 
+
+
   print('
     <link rel="stylesheet" type="text/css" href="'.$plugin_location.'css/st_wp_style.css"/>
     <link rel="stylesheet" type="text/css" href="'.$plugin_location.'css/stlib_picker.css" />
@@ -697,7 +700,6 @@ function st_options_form() {
     </script>
     '.$include_scripts.'
     <script type="text/javascript" src="'.$plugin_location.'libraries/get-buttons-new.js"></script>
-
     <script type="text/javascript" src="'.$plugin_location.'libraries/stlib_picker.js"></script>
     <script type="text/javascript" src="'.$plugin_location.'libraries/stlib_preview.js"></script>
 
@@ -1257,7 +1259,17 @@ function st_styles(){
   }
 }
 
+function st_load_scripts() {
+  wp_enqueue_script('jquery-ui-core');
+  wp_enqueue_script('jquery-ui-widget');
+  wp_enqueue_script('jquery-ui-draggable');
+  wp_enqueue_script('jquery-ui-droppable');
+  wp_enqueue_script('jquery-ui-sortable');
+  wp_enqueue_script('jquery-effects-core');
+}
+
 function st_load_custom_scripts() {
+  st_load_scripts();
 // To set plugin path for JS files
 echo '<script type="text/javascript">
 
@@ -1267,11 +1279,14 @@ var st_script_vars = {"plugin_url":"'.plugin_dir_url( __FILE__ ).'"};
 </script>';
 
 }
+define('SCRIPT_DEBUG', true);
+
 
 add_action('wp_head', 'st_widget_head');
 add_action('init', 'st_request_handler', 9999);
 add_action('admin_menu', 'st_menu_items');
-add_action( 'wp_enqueue_scripts', 'st_styles' );
+// add_action('wp_enqueue_scripts', 'st_load_scripts');
+add_action('admin_enqueue_scripts', 'st_load_scripts');
 add_action('admin_print_scripts', 'st_load_custom_scripts');
 register_activation_hook( __FILE__, 'install_ShareThis');
 register_uninstall_hook( __FILE__, 'uninstall_ShareThis');
