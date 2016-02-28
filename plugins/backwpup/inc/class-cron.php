@@ -138,8 +138,8 @@ class BackWPup_Cron {
 		nocache_headers();
 
 		//on test die for fast feedback
-		if ( $_GET[ 'backwpup_run' ] === 'test' ) {
-			die( '' );
+		if ( $_GET[ 'backwpup_run' ] == 'test' ) {
+			die( 'BackWPup Test' );
 		}
 
 		// generate normal nonce
