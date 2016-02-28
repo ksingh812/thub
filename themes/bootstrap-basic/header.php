@@ -51,7 +51,7 @@
 						</div>
 						<?php if (is_active_sidebar('header-right')) { ?> 
 						<div class="pull-right">
-							<?php dynamic_sidebar('header-right'); ?> 
+							<?php //dynamic_sidebar('header-right'); ?> 
 						</div>
 						<div class="clearfix"></div>
 						<?php } // endif; ?> 
