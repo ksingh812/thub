@@ -10,7 +10,7 @@ Social Charge your Content with ShareThis - features Social Analytics, CopyNShar
 
 == Description ==
 
-**Updates 4/23/2014**
+**Updates 2/12/2016**
 
 New Look. Same Function.
 You may have been selected to get a free ShareThis Multi Post widget upgrade.
@@ -61,6 +61,14 @@ More information about the [ShareThis plugin for WordPress](http://support.share
 5. Please refer this article for detailed instructions - [wordpress installation](http://support.sharethis.com/customer/portal/articles/446440-wordpress-integration)
 
 == Changelog ==
+7.3
+
+Additional drag and drop changes
+
+7.2
+
+Users can no drag and drop services for newer wordpress versions
+
 7.0.22
 
 User will no longer see the selection of MultiPost/Direct Post widget option. By default, new users will get MultiPost Widget.
