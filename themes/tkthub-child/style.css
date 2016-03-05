@@ -492,6 +492,9 @@ h1.entry-title{
 		width: 100%;
 		text-align: center;
 	}
+	.navbar-header{
+		height: 50px;
+	}
 	.container{
 		padding-left:0;
 		padding:right:0;
