@@ -487,10 +487,14 @@ h1.entry-title{
 
 /** RESPONSIVE **/
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   h1.site-title-heading {
 		width: 100%;
 		text-align: center;
+	}
+	.container{
+		padding-left:0;
+		padding:right:0;
 	}
 	.jumbotron{
 	height: 200px;
