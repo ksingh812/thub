@@ -1,4 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="content-area col-md-6 col-sm-12">
+		
+	
 	<header class="entry-header">
 		<?php
 	 		if (has_post_thumbnail()){
@@ -47,7 +50,10 @@
 		?> 
 	</div><!-- .entry-content -->
 	<?php } //endif; ?> 
-
+	</div>
+	<div class="tickets-area col-md-6 col-sm-12">
+		
+	
 	
 	<footer class="entry-meta">
 		<div class="tickets-table">
@@ -62,4 +68,5 @@
 				// ]]></script></div><a style="margin-top:20px;" class="qbutton  medium normal" title="<?php echo $artist_name; ?> Tickets" target="_self" href="http://tickets.tickethub.co/ResultsGeneral.aspx?stype=0&kwds=<?php echo $artist_name; ?>">MORE TICKETS >> </a>
 		</div>
 	</footer><!-- .entry-meta -->
+	</div>
 </article><!-- #post-## -->

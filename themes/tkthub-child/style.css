@@ -171,7 +171,8 @@ h1{
 h3.ticket-title {
 	background: #D21829;
 	line-height: 60px;
-	margin-bottom: 0px;
+	margin: 0 auto;
+	
 	padding-left: 10px;
 	color: #fff;
 	font-family: "Oswald";
@@ -182,6 +183,9 @@ h3.ticket-title {
 }   
    
 /* Ticket Table */
+.single #main-column .post {
+	border: none;
+}
 .tn_results{
 	width: 100%;
 	font-family: "Roboto",serif;
@@ -191,7 +195,13 @@ h3.ticket-title {
 	width: 40%;
 	padding-left: 10px;
 }
-
+.tn_results_tickets_text{
+	width: 20%;
+}
+.tn_results_tickets_text a{
+	font-size:12px;
+	text-align:center;
+}
 .tkt-btn {
     font-size: 14px;
 	font-weight: 400;
