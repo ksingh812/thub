@@ -485,6 +485,15 @@ h1.entry-title{
 	font-size: 30px;
 }
 
+.round-box .fa{
+	    font-size: 35px;
+    padding: 20px 25px;
+    /*border: 1px solid #bdbdbd;
+    border-radius: 50px;
+    background-color: #D21829;*/
+    color: #333;
+}
+
 /** RESPONSIVE **/
 
 @media screen and (max-width: 600px) {
