@@ -1,5 +1,5 @@
-uploads/*
-plugins/*
+/uploads/*
+/plugins/*
 /advanced-cache.php
 /cache/*
 /db.php
