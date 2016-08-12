@@ -39,7 +39,9 @@ a:hover{
 	padding: 10px;
 	margin: 20px 0px;
 }
-
+.entry-content a{
+	color:#D21829;
+}
 h1{
 	font-weight: 500;
 	margin-top: 0px;
